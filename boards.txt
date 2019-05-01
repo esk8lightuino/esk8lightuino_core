@@ -1,0 +1,28 @@
+# VID 0x6666 is a prototype product Vendor ID
+# http://www.linux-usb.org/usb.ids
+
+menu.LTO=LTO
+
+# ATtiny841 @ internal 8MHz
+esk8lightuino841.name=Esk8Lightuino Board v1.0 (8 MHz)
+esk8lightuino841.upload.maximum_size=6606
+esk8lightuino841.upload.maximum_data_size=512
+esk8lightuino841.upload.tool=micronucleus
+esk8lightuino841.upload.protocol=usb
+esk8lightuino841.bootloader.tool=ATTinyCore:avrdude
+esk8lightuino841.build.mcu=attiny841
+esk8lightuino841.build.f_cpu=8000000L
+esk8lightuino841.build.board=AVR_ATTINYX41
+esk8lightuino841.build.core=Esk8LightuinoATTinyCore:tinymodern
+esk8lightuino841.build.extra_flags={build.pinmap}
+esk8lightuino841.build.pinmap=-DOLD_PINOUT
+esk8lightuino841.menu.LTO.no=Disabled
+esk8lightuino841.menu.LTO.no.ltocflags=
+esk8lightuino841.menu.LTO.no.ltoelfflags=
+esk8lightuino841.menu.LTO.no.ltocppflags=
+esk8lightuino841.menu.LTO.no.ltoarcmd=
+esk8lightuino841.menu.LTO.yes=Enabled
+esk8lightuino841.menu.LTO.yes.ltocflags=-flto -fno-fat-lto-objects
+esk8lightuino841.menu.LTO.yes.ltoelfflags=-g -flto -fuse-linker-plugin
+esk8lightuino841.menu.LTO.yes.ltocppflags=-flto
+esk8lightuino841.menu.LTO.yes.ltoarcmd=gcc-
